@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: W3lc0m3_2026!
+      POSTGRES_DB: vcabs
+    ports:
+      - "5433:5432"
+  valkey:
+    image: valkey/valkey:latest
+    ports:
+      - "6379:6379"
+    environment:
+      - VALKEY_PASSWORD=qw3rty@2026
