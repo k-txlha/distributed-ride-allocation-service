@@ -1,4 +1,4 @@
-# Real-Time Driver Allocation System 🚖
+# Real-Time Driver Allocation System
 
 A lightweight NestJS backend for managing ride requests and assigning them to nearby drivers under high-concurrency conditions. The system uses PostgreSQL for persistent ride state and Valkey/Redis for fast geospatial lookup and race-safe ride acceptance.
 
