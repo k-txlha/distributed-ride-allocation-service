@@ -3,9 +3,9 @@ services:
   postgres:
     image: postgres:15
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: W3lc0m3_2026!
-      POSTGRES_DB: vcabs
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - "5433:5432"
   valkey:
@@ -13,4 +13,4 @@ services:
     ports:
       - "6379:6379"
     environment:
-      - VALKEY_PASSWORD=qw3rty@2026
+      - VALKEY_PASSWORD= ${VALKEY_PASSWORD}
