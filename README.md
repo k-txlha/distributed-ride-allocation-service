@@ -191,10 +191,12 @@ The app uses the following local defaults:
 
 - PostgreSQL host: localhost
 - PostgreSQL port: 5433
-- PostgreSQL database: vcabs
+- PostgreSQL user: **set in .env file**
+- PostgreSQL password: **set in .env file**
+- PostgreSQL database: **set in .env file**
 - Valkey host: localhost
 - Valkey port: 6379
-- Valkey password: qw3rty@2026
+- Valkey password: **set in .env file**
 
 ## Notes
 
